@@ -1,0 +1,15 @@
+# Ignorar el caché local de Node.js
+node_modules
+
+# Ignorar logs de NPM
+npm-debug.log*
+
+# Ignorar archivos de caché del sistema operativo/editor
+.DS_Store
+*.swp
+
+# Ignorar el Dockerfile en sí (aunque no afecta mucho)
+Dockerfile
+
+# Ignorar la carpeta de compilación si la generas en tu máquina
+dist
