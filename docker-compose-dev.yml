@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  cerdito:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    links:
+      - db
+    volumes:
+      - .:/app
+      - /app/node_modules
+  db:
+    image: mysql
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=homero123
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:

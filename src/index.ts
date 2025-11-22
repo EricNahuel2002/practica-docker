@@ -10,5 +10,5 @@ app.use('/api', routes);
 
 
 app.listen(port, () => {
-	console.log(`Server listening on http://localhost:${port}`);
+	console.log(`hola escuchaa en http://localhost:${port}`);
 });
